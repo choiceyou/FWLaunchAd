@@ -253,7 +253,7 @@
     // 广告点击打开页面参数(openModel可为NSString,模型,字典等任意类型)
     videoAdconfiguration.openModel =  @"http://www.it7090.com";
     // 跳过按钮类型
-    videoAdconfiguration.skipButtonType = AdSkipTypeText;
+    videoAdconfiguration.skipButtonType = AdSkipTypeRoundProgressTime;
     // 广告显示完成动画
     videoAdconfiguration.showFinishAnimate = AdShowCompletedAnimateLite;
     // 广告显示完成动画时间

@@ -68,13 +68,13 @@
             // 防止重复调用
             self.completedBlock = nil;
         }
-        //下载完成回调
+        // 下载完成回调
         if ([self.delegate respondsToSelector:@selector(downloadFinishWithURL:)])
         {
             [self.delegate downloadFinishWithURL:self.url];
         }
     });
-    //销毁
+    // 销毁
     [self.session invalidateAndCancel];
     self.session = nil;
 }
@@ -104,7 +104,7 @@
     }
 }
 
-//处理HTTPS请求的
+// 处理HTTPS请求的
 - (void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential *))completionHandler
 {
     NSURLProtectionSpace *protectionSpace = challenge.protectionSpace;
@@ -170,7 +170,7 @@
             // 防止重复调用
             self.completedBlock = nil;
         }
-        //下载完成回调
+        // 下载完成回调
         if ([self.delegate respondsToSelector:@selector(downloadFinishWithURL:)])
         {
             [self.delegate downloadFinishWithURL:self.url];

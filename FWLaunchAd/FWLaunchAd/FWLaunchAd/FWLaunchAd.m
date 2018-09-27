@@ -348,7 +348,10 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
     }
     // skipButton
     [self addSkipButtonForConfiguration:configuration];
+    
+    // 开启结束广告定时器
     [self startSkipDispathTimer];
+    
     // customView
     if(configuration.subViews.count>0)
     {
@@ -420,19 +423,15 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
         [[NSNotificationCenter defaultCenter] addObserverForName:AVPlayerItemDidPlayToEndTimeNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
             ADNSLog(@"video不循环,播放完成");
             [[NSNotificationCenter defaultCenter] postNotificationName:FWLaunchAdVideoCycleOnceFinishNotification object:nil userInfo:@{@"videoNameOrURLString":configuration.videoNameOrURLString}];
-            
-            if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
-            {
-                [self removeAndAnimate];
-            }
         }];
     }
     
     // video 数据源
+    NSURL *pathURL = nil;
     if(configuration.videoNameOrURLString.length && AdIsURLString(configuration.videoNameOrURLString))
     {
         [FWLaunchAdCache async_saveVideoUrl:configuration.videoNameOrURLString];
-        NSURL *pathURL = [FWLaunchAdCache getCacheVideoWithURL:[NSURL URLWithString:configuration.videoNameOrURLString]];
+        pathURL = [FWLaunchAdCache getCacheVideoWithURL:[NSURL URLWithString:configuration.videoNameOrURLString]];
         if(pathURL)
         {
             if ([self.delegate respondsToSelector:@selector(fwLaunchAd:videoDownLoadFinish:)])
@@ -470,7 +469,6 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
     {
         if(configuration.videoNameOrURLString.length)
         {
-            NSURL *pathURL = nil;
             NSURL *cachePathURL = [[NSURL alloc] initFileURLWithPath:[FWLaunchAdCache videoPathWithFileName:configuration.videoNameOrURLString]];
             // 若本地视频未在沙盒缓存文件夹中
             if (![FWLaunchAdCache checkVideoInCacheWithFileName:configuration.videoNameOrURLString])
@@ -509,7 +507,17 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
     }
     // skipButton
     [self addSkipButtonForConfiguration:configuration];
+    
+    if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
+    {
+        AVURLAsset *asset = [AVURLAsset assetWithURL:pathURL];
+        CMTime time = [asset duration];
+        int seconds = ceil(time.value/time.timescale);
+        _videoAdConfiguration.duration = seconds;
+    }
+    // 开启结束广告定时器
     [self startSkipDispathTimer];
+    
     // customView
     if(configuration.subViews.count>0) [self addSubViews:configuration.subViews];
     AdWeakify(self)
@@ -705,11 +713,6 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
 - (void)startSkipDispathTimer
 {
     FWLaunchAdConfiguration *configuration = [self commonConfiguration];
-    if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
-    {
-        return;
-    }
-    
     DISPATCH_SOURCE_CANCEL_SAFE(_waitDataTimer);
     if(!configuration.skipButtonType) configuration.skipButtonType = AdSkipTypeTimeText; // 默认
     __block NSInteger duration = adShowDurationDefault; // 默认

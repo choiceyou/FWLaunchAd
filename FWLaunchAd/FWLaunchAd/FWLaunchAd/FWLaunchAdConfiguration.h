@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, AdShowCompletedAnimate)
 
  - FWLaunchDynamicAdPlayDefault: 循环播放、可传入结束时间
  - FWLaunchDynamicAdPlayCycleOnce: 只播放一次、可传入结束时间
- - FWLaunchDynamicAdPlayCycleOnceFinished: 只播放一次，同时播放结束即消失广告，不受传入结束时间的控制（因此当前类型不建议关闭按钮含倒计时状态）
+ - FWLaunchDynamicAdPlayCycleOnceFinished: 只播放一次，同时播放结束即消失广告。注意：此时外部传入的Configuration中的duration参数无效
  */
 typedef NS_ENUM(NSUInteger, FWLaunchDynamicAdPlayType)
 {
