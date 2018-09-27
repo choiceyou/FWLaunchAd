@@ -63,6 +63,11 @@ typedef NS_ENUM(NSUInteger, FWLaunchDynamicAdPlayType)
 @property (nonatomic, assign) NSUInteger duration;
 
 /**
+ 延迟显示关闭按钮(default 0 ,单位:秒)
+ */
+@property (nonatomic, assign) NSUInteger waitUntilShowCloseBtn;
+
+/**
  跳过按钮类型(default AdSkipTypeTimeText)
  */
 @property (nonatomic, assign) AdSkipType skipButtonType;

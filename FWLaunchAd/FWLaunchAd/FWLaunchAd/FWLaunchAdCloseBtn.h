@@ -54,7 +54,8 @@ typedef NS_ENUM(NSInteger, AdSkipType)
 
  @param skipType 倒计时类型
  @param duration 总时间
+ @param waitUntilShowCloseBtn 延迟显示关闭按钮(default 0 ,单位:秒)
  */
-- (void)setTitleWithSkipType:(AdSkipType)skipType duration:(NSInteger)duration;
+- (void)setTitleWithSkipType:(AdSkipType)skipType duration:(NSInteger)duration waitUntilShowCloseBtn:(NSUInteger)waitUntilShowCloseBtn;
 
 @end

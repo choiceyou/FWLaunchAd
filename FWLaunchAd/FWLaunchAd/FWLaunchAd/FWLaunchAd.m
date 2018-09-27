@@ -402,7 +402,7 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
             [_skipButton addTarget:self action:@selector(skipButtonClick) forControlEvents:UIControlEventTouchUpInside];
         }
         [_window addSubview:_skipButton];
-        [_skipButton setTitleWithSkipType:configuration.skipButtonType duration:configuration.duration];
+        [_skipButton setTitleWithSkipType:configuration.skipButtonType duration:configuration.duration waitUntilShowCloseBtn:configuration.waitUntilShowCloseBtn];
         _skipButton.hidden = YES;
     }
 }
@@ -800,8 +800,12 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
 
 - (void)startSkipDispathTimer
 {
-    _skipButton.hidden = NO;
     FWLaunchAdConfiguration *configuration = [self commonConfiguration];
+    if (configuration.waitUntilShowCloseBtn == 0)
+    {
+        _skipButton.hidden = NO;
+    }
+    
     DISPATCH_SOURCE_CANCEL_SAFE(_waitDataTimer);
     if(!configuration.skipButtonType) configuration.skipButtonType = AdSkipTypeTimeText; // 默认
     __block NSInteger duration = adShowDurationDefault; // 默认
@@ -824,7 +828,7 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
             }
             if(!configuration.customSkipView)
             {
-                [self.skipButton setTitleWithSkipType:configuration.skipButtonType duration:duration];
+                [self.skipButton setTitleWithSkipType:configuration.skipButtonType duration:duration waitUntilShowCloseBtn:configuration.waitUntilShowCloseBtn];
             }
             if(duration==0)
             {

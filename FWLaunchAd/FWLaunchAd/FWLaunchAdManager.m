@@ -63,7 +63,7 @@
     //[self example01];
     
     //2.******图片开屏广告 - 本地数据******
-    //[self example02];
+    [self example02];
     
     //3.******视频开屏广告 - 网络数据(网络视频只支持缓存OK后下次显示,看效果请二次运行)******
     //[self example03];
@@ -72,7 +72,7 @@
     //[self example04];
     
     /** 5.如需自定义跳过按钮,请看这个示例 */
-    [self example05];
+    //[self example05];
     
     /** 6.使用默认配置快速初始化,请看下面两个示例 */
     //[self example06];//图片
@@ -234,6 +234,8 @@
     videoAdconfiguration.dynamicAdPlayType = FWLaunchDynamicAdPlayCycleOnceFinished;
     // 广告停留时间，注意：此时 dynamicAdPlayType = FWLaunchDynamicAdPlayCycleOnceFinished，因此该属性会失效
     videoAdconfiguration.duration = 3;
+    // 延迟显示关闭按钮(default 0 ,单位:秒)
+    videoAdconfiguration.waitUntilShowCloseBtn = 3;
     // 广告frame
     videoAdconfiguration.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     // 广告视频URLString/或本地视频名(请带上后缀)

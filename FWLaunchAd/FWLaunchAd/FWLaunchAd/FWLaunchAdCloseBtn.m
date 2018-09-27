@@ -35,6 +35,7 @@ static NSString *const kDurationUnit = @"S";
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) CAShapeLayer *roundLayer;
 @property (nonatomic, copy) dispatch_source_t roundTimer;
+@property (nonatomic, assign) BOOL isHasWait;
 
 @end
 
@@ -115,7 +116,7 @@ static NSString *const kDurationUnit = @"S";
     return self;
 }
 
-- (void)setTitleWithSkipType:(AdSkipType)skipType duration:(NSInteger)duration
+- (void)setTitleWithSkipType:(AdSkipType)skipType duration:(NSInteger)duration waitUntilShowCloseBtn:(NSUInteger)waitUntilShowCloseBtn
 {
     if (skipType == AdSkipTypeNone)
     {
@@ -123,7 +124,15 @@ static NSString *const kDurationUnit = @"S";
     }
     else
     {
-        self.hidden = NO;
+        if (waitUntilShowCloseBtn > 0 && !self.isHasWait)
+        {
+            self.isHasWait = YES;
+            [self performSelector:@selector(showSelf) withObject:nil afterDelay:waitUntilShowCloseBtn];
+        }
+        else if (waitUntilShowCloseBtn == 0)
+        {
+            [self showSelf];
+        }
         
         switch (skipType) {
             case AdSkipTypeTime:
@@ -166,6 +175,11 @@ static NSString *const kDurationUnit = @"S";
                 break;
         }
     }
+}
+
+- (void)showSelf
+{
+    self.hidden = NO;
 }
 
 - (void)startRoundDispathTimerWithDuration:(CGFloat)duration
