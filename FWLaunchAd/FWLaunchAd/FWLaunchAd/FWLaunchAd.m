@@ -266,7 +266,11 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
         adImageView.contentMode = configuration.contentMode;
     }
     
+    // skipButton
+    [self addSkipButtonForConfiguration:configuration];
+    
     // webImage
+    __block NSData *data = nil;
     if(configuration.imageNameOrURLString.length && AdIsURLString(configuration.imageNameOrURLString))
     {
         // 自设图片
@@ -291,6 +295,12 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
                 if(!error)
                 {
                     AdStrongify(self)
+                    if (imageData && FWIsGIFTypeWithData(imageData))
+                    {
+                        self.imageAdConfiguration.duration = [self durationForGifData:imageData] + 1;
+                    }
+                    [self startSkipDispathTimer];
+                    
                     if ([self.delegate respondsToSelector:@selector(fwLaunchAd:imageDownLoadFinish:imageData:)])
                     {
                         [self.delegate fwLaunchAd:self imageDownLoadFinish:image imageData:imageData];
@@ -314,7 +324,7 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
     {
         if(configuration.imageNameOrURLString.length)
         {
-            NSData *data = FWDataWithFileName(configuration.imageNameOrURLString);
+            data = FWDataWithFileName(configuration.imageNameOrURLString);
             if(FWIsGIFTypeWithData(data))
             {
                 FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:data];
@@ -327,11 +337,6 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
                         [w_adImageView stopAnimating];
                         ADNSLog(@"GIF不循环,播放完成");
                         [[NSNotificationCenter defaultCenter] postNotificationName:FWLaunchAdGIFImageCycleOnceFinishNotification object:@{@"imageNameOrURLString":configuration.imageNameOrURLString}];
-                        
-                        if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
-                        {
-                            [self removeAndAnimate];
-                        }
                     }
                 };
             }
@@ -346,11 +351,20 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
             ADNSLog(@"未设置广告图片");
         }
     }
-    // skipButton
-    [self addSkipButtonForConfiguration:configuration];
     
     // 开启结束广告定时器
-    [self startSkipDispathTimer];
+    if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
+    {
+        if (data && FWIsGIFTypeWithData(data))
+        {
+            _imageAdConfiguration.duration = [self durationForGifData:data] + 1;
+        }
+        [self startSkipDispathTimer];
+    }
+    else
+    {
+        [self startSkipDispathTimer];
+    }
     
     // customView
     if(configuration.subViews.count>0)
@@ -385,11 +399,11 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
         if(_skipButton == nil)
         {
             _skipButton = [[FWLaunchAdCloseBtn alloc] initWithSkipType:configuration.skipButtonType];
-            _skipButton.hidden = YES;
             [_skipButton addTarget:self action:@selector(skipButtonClick) forControlEvents:UIControlEventTouchUpInside];
         }
         [_window addSubview:_skipButton];
         [_skipButton setTitleWithSkipType:configuration.skipButtonType duration:configuration.duration];
+        _skipButton.hidden = YES;
     }
 }
 
@@ -425,6 +439,9 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
             [[NSNotificationCenter defaultCenter] postNotificationName:FWLaunchAdVideoCycleOnceFinishNotification object:nil userInfo:@{@"videoNameOrURLString":configuration.videoNameOrURLString}];
         }];
     }
+    
+    // skipButton
+    [self addSkipButtonForConfiguration:configuration];
     
     // video 数据源
     NSURL *pathURL = nil;
@@ -505,10 +522,8 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
             ADNSLog(@"未设置广告视频");
         }
     }
-    // skipButton
-    [self addSkipButtonForConfiguration:configuration];
     
-    if (configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
+    if (pathURL && configuration.dynamicAdPlayType == FWLaunchDynamicAdPlayCycleOnceFinished)
     {
         AVURLAsset *asset = [AVURLAsset assetWithURL:pathURL];
         CMTime time = [asset duration];
@@ -528,13 +543,86 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
 }
 
 
-#pragma mark - ----------------------- add subViews -----------------------
+#pragma mark - ----------------------- others -----------------------
 
 - (void)addSubViews:(NSArray *)subViews
 {
     [subViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
         [self.window addSubview:view];
     }];
+}
+
+// 获取gif图片的总时长和循环次数
+- (NSTimeInterval)durationForGifData:(NSData *)data
+{
+    //将GIF图片转换成对应的图片源
+    CGImageSourceRef gifSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
+    //获取其中图片源个数，即由多少帧图片组成
+    size_t frameCout = CGImageSourceGetCount(gifSource);
+    //定义数组存储拆分出来的图片
+    NSMutableArray* frames = [[NSMutableArray alloc] init];
+    NSTimeInterval totalDuration = 0;
+    for (size_t i=0; i<frameCout; i++)
+    {
+        //从GIF图片中取出源图片
+        CGImageRef imageRef = CGImageSourceCreateImageAtIndex(gifSource, i, NULL);
+        //将图片源转换成UIimageView能使用的图片源
+        UIImage* imageName = [UIImage imageWithCGImage:imageRef];
+        //将图片加入数组中
+        [frames addObject:imageName];
+        NSTimeInterval duration = [self gifImageDeleyTime:gifSource index:i];
+        totalDuration += duration;
+        CGImageRelease(imageRef);
+    }
+    
+    //获取循环次数
+    NSInteger loopCount;//循环次数
+    CFDictionaryRef properties = CGImageSourceCopyProperties(gifSource, NULL);
+    if (properties)
+    {
+        CFDictionaryRef gif = CFDictionaryGetValue(properties, kCGImagePropertyGIFDictionary);
+        if (gif)
+        {
+            CFTypeRef loop = CFDictionaryGetValue(gif, kCGImagePropertyGIFLoopCount);
+            if (loop)
+            {
+                //如果loop == NULL，表示不循环播放，当loopCount  == 0时，表示无限循环；
+                CFNumberGetValue(loop, kCFNumberNSIntegerType, &loopCount);
+            };
+        }
+    }
+    
+    CFRelease(gifSource);
+    return totalDuration;
+}
+
+// 获取GIF图片每帧的时长
+- (NSTimeInterval)gifImageDeleyTime:(CGImageSourceRef)imageSource index:(NSInteger)index
+{
+    NSTimeInterval duration = 0;
+    CFDictionaryRef imageProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, index, NULL);
+    if (imageProperties)
+    {
+        CFDictionaryRef gifProperties;
+        BOOL result = CFDictionaryGetValueIfPresent(imageProperties, kCGImagePropertyGIFDictionary, (const void **)&gifProperties);
+        if (result)
+        {
+            const void *durationValue;
+            if (CFDictionaryGetValueIfPresent(gifProperties, kCGImagePropertyGIFUnclampedDelayTime, &durationValue))
+            {
+                duration = [(__bridge NSNumber *)durationValue doubleValue];
+                if (duration < 0)
+                {
+                    if (CFDictionaryGetValueIfPresent(gifProperties, kCGImagePropertyGIFDelayTime, &durationValue))
+                    {
+                        duration = [(__bridge NSNumber *)durationValue doubleValue];
+                    }
+                }
+            }
+        }
+    }
+    
+    return duration;
 }
 
 
@@ -712,6 +800,7 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
 
 - (void)startSkipDispathTimer
 {
+    _skipButton.hidden = NO;
     FWLaunchAdConfiguration *configuration = [self commonConfiguration];
     DISPATCH_SOURCE_CANCEL_SAFE(_waitDataTimer);
     if(!configuration.skipButtonType) configuration.skipButtonType = AdSkipTypeTimeText; // 默认

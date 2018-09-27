@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FWLaunchAd.h"
 
-@interface FWLaunchAdManager : NSObject
+@interface FWLaunchAdManager : NSObject <FWLaunchAdDelegate>
 
 @end
