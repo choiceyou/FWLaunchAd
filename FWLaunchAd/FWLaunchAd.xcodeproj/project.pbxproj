@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AFA84447B402A4C27C53FFB /* libPods-FWLaunchAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC04B77E77AC729BDC55C79 /* libPods-FWLaunchAd.a */; };
+		49460C6D215B1E1E00D74896 /* LaunchVideoAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 49460C62215B1E1E00D74896 /* LaunchVideoAd.json */; };
+		49460C6E215B1E1E00D74896 /* video0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49460C63215B1E1E00D74896 /* video0.mp4 */; };
+		49460C6F215B1E1E00D74896 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49460C64215B1E1E00D74896 /* video1.mp4 */; };
+		49460C70215B1E1E00D74896 /* LaunchImageAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 49460C65215B1E1E00D74896 /* LaunchImageAd.json */; };
+		49460C71215B1E1E00D74896 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49460C66215B1E1E00D74896 /* image4.jpg */; };
+		49460C72215B1E1E00D74896 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49460C67215B1E1E00D74896 /* image1.jpg */; };
+		49460C73215B1E1E00D74896 /* image12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49460C68215B1E1E00D74896 /* image12.gif */; };
+		49460C74215B1E1E00D74896 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49460C69215B1E1E00D74896 /* image0.jpg */; };
+		49460C75215B1E1E00D74896 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49460C6A215B1E1E00D74896 /* image2.jpg */; };
+		49460C76215B1E1E00D74896 /* image11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49460C6B215B1E1E00D74896 /* image11.gif */; };
+		49460C77215B1E1F00D74896 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49460C6C215B1E1E00D74896 /* image3.jpg */; };
+		49460C7A215B272B00D74896 /* FWLaunchAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C79215B272B00D74896 /* FWLaunchAdManager.m */; };
+		49460C8E215B2BC800D74896 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C82215B2BC800D74896 /* Network.m */; };
+		49460C8F215B2BC800D74896 /* UIViewController+Nav.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C86215B2BC800D74896 /* UIViewController+Nav.m */; };
+		49460C90215B2BC800D74896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C87215B2BC800D74896 /* ViewController.m */; };
+		49460C91215B2BC800D74896 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C88215B2BC800D74896 /* WebViewController.m */; };
+		49460C92215B2BC800D74896 /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C8B215B2BC800D74896 /* LaunchAdModel.m */; };
+		49460C95215B32FE00D74896 /* FWLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */; };
+		49460C97215B73A600D74896 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49460C96215B73A600D74896 /* video2.mp4 */; };
+		4971A1D4214BAD18002B82BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1D3214BAD18002B82BC /* AppDelegate.m */; };
+		4971A1DA214BAD18002B82BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971A1D8214BAD18002B82BC /* Main.storyboard */; };
+		4971A1DC214BAD19002B82BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4971A1DB214BAD19002B82BC /* Assets.xcassets */; };
+		4971A1DF214BAD19002B82BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971A1DD214BAD19002B82BC /* LaunchScreen.storyboard */; };
+		4971A1E2214BAD19002B82BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1E1214BAD19002B82BC /* main.m */; };
+		4971A1EC214BAD19002B82BC /* FWLaunchAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1EB214BAD19002B82BC /* FWLaunchAdTests.m */; };
+		4971A1F7214BAD19002B82BC /* FWLaunchAdUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1F6214BAD19002B82BC /* FWLaunchAdUITests.m */; };
+		4971A207214BAD52002B82BC /* FWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A206214BAD52002B82BC /* FWLaunchAd.m */; };
+		498BA68D214F3BBF00790500 /* FWLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */; };
+		498BA690214F3DD100790500 /* FWLaunchAdCloseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */; };
+		498BA696214F50E600790500 /* FWLaunchAdMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA695214F50E600790500 /* FWLaunchAdMacro.m */; };
+		498BA699214F7C3600790500 /* FWLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */; };
+		498BA69F214F80F100790500 /* FWLaunchAdImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA69E214F80F100790500 /* FWLaunchAdImageView.m */; };
+		498BA6A2214F812000790500 /* FWLaunchAdVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */; };
+		498BA6A5214F953700790500 /* FWLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A4214F953700790500 /* FWLaunchImageView.m */; };
+		498BA6A8214FA1E900790500 /* FWLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A7214FA1E900790500 /* FWLaunchAdController.m */; };
+		499FDFE92150ABC0005BCE3E /* FWLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4971A1E8214BAD19002B82BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4971A1C7214BAD18002B82BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4971A1CE214BAD18002B82BC;
+			remoteInfo = FWLaunchAd;
+		};
+		4971A1F3214BAD19002B82BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4971A1C7214BAD18002B82BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4971A1CE214BAD18002B82BC;
+			remoteInfo = FWLaunchAd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0466D11C3601206F1349BD7F /* libPods-FWLaunchAdUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FWLaunchAdUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3288B4E6C3E159C81E51679A /* libPods-FWLaunchAdTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FWLaunchAdTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49460C62215B1E1E00D74896 /* LaunchVideoAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchVideoAd.json; sourceTree = "<group>"; };
+		49460C63215B1E1E00D74896 /* video0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video0.mp4; sourceTree = "<group>"; };
+		49460C64215B1E1E00D74896 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		49460C65215B1E1E00D74896 /* LaunchImageAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchImageAd.json; sourceTree = "<group>"; };
+		49460C66215B1E1E00D74896 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		49460C67215B1E1E00D74896 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		49460C68215B1E1E00D74896 /* image12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image12.gif; sourceTree = "<group>"; };
+		49460C69215B1E1E00D74896 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		49460C6A215B1E1E00D74896 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		49460C6B215B1E1E00D74896 /* image11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image11.gif; sourceTree = "<group>"; };
+		49460C6C215B1E1E00D74896 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		49460C78215B272B00D74896 /* FWLaunchAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdManager.h; sourceTree = "<group>"; };
+		49460C79215B272B00D74896 /* FWLaunchAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdManager.m; sourceTree = "<group>"; };
+		49460C82215B2BC800D74896 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		49460C83215B2BC800D74896 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		49460C85215B2BC800D74896 /* UIViewController+Nav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Nav.h"; sourceTree = "<group>"; };
+		49460C86215B2BC800D74896 /* UIViewController+Nav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Nav.m"; sourceTree = "<group>"; };
+		49460C87215B2BC800D74896 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49460C88215B2BC800D74896 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		49460C8A215B2BC800D74896 /* LaunchAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAdModel.h; sourceTree = "<group>"; };
+		49460C8B215B2BC800D74896 /* LaunchAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
+		49460C8C215B2BC800D74896 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49460C8D215B2BC800D74896 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		49460C93215B32FD00D74896 /* FWLaunchAdDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdDownloader.h; sourceTree = "<group>"; };
+		49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdDownloader.m; sourceTree = "<group>"; };
+		49460C96215B73A600D74896 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		4971A1CF214BAD18002B82BC /* FWLaunchAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWLaunchAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4971A1D2214BAD18002B82BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4971A1D3214BAD18002B82BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4971A1D9214BAD18002B82BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4971A1DB214BAD19002B82BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4971A1DE214BAD19002B82BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4971A1E0214BAD19002B82BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4971A1E1214BAD19002B82BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4971A1E7214BAD19002B82BC /* FWLaunchAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWLaunchAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4971A1EB214BAD19002B82BC /* FWLaunchAdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdTests.m; sourceTree = "<group>"; };
+		4971A1ED214BAD19002B82BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4971A1F2214BAD19002B82BC /* FWLaunchAdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWLaunchAdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4971A1F6214BAD19002B82BC /* FWLaunchAdUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdUITests.m; sourceTree = "<group>"; };
+		4971A1F8214BAD19002B82BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4971A205214BAD52002B82BC /* FWLaunchAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAd.h; sourceTree = "<group>"; };
+		4971A206214BAD52002B82BC /* FWLaunchAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAd.m; sourceTree = "<group>"; };
+		498BA68B214F3BBF00790500 /* FWLaunchAdConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		498BA68E214F3DD100790500 /* FWLaunchAdCloseBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCloseBtn.h; sourceTree = "<group>"; };
+		498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCloseBtn.m; sourceTree = "<group>"; };
+		498BA694214F50E600790500 /* FWLaunchAdMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdMacro.h; sourceTree = "<group>"; };
+		498BA695214F50E600790500 /* FWLaunchAdMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdMacro.m; sourceTree = "<group>"; };
+		498BA697214F7C3600790500 /* FWLaunchAdImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageManager.h; sourceTree = "<group>"; };
+		498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageManager.m; sourceTree = "<group>"; };
+		498BA69D214F80F100790500 /* FWLaunchAdImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageView.h; sourceTree = "<group>"; };
+		498BA69E214F80F100790500 /* FWLaunchAdImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageView.m; sourceTree = "<group>"; };
+		498BA6A0214F812000790500 /* FWLaunchAdVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdVideoView.h; sourceTree = "<group>"; };
+		498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdVideoView.m; sourceTree = "<group>"; };
+		498BA6A3214F953700790500 /* FWLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchImageView.h; sourceTree = "<group>"; };
+		498BA6A4214F953700790500 /* FWLaunchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchImageView.m; sourceTree = "<group>"; };
+		498BA6A6214FA1E900790500 /* FWLaunchAdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdController.h; sourceTree = "<group>"; };
+		498BA6A7214FA1E900790500 /* FWLaunchAdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdController.m; sourceTree = "<group>"; };
+		499FDFE72150ABC0005BCE3E /* FWLaunchAdCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCache.h; sourceTree = "<group>"; };
+		499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCache.m; sourceTree = "<group>"; };
+		903FCDE0E0D8BF0C14E13C80 /* Pods-FWLaunchAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWLaunchAd.release.xcconfig"; path = "Pods/Target Support Files/Pods-FWLaunchAd/Pods-FWLaunchAd.release.xcconfig"; sourceTree = "<group>"; };
+		C7CBCB2D42B3C9C8F74400E8 /* Pods-FWLaunchAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWLaunchAd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FWLaunchAd/Pods-FWLaunchAd.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC04B77E77AC729BDC55C79 /* libPods-FWLaunchAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FWLaunchAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4971A1CC214BAD18002B82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFA84447B402A4C27C53FFB /* libPods-FWLaunchAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1E4214BAD19002B82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1EF214BAD19002B82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11367434D90D0264546BDEDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7CBCB2D42B3C9C8F74400E8 /* Pods-FWLaunchAd.debug.xcconfig */,
+				903FCDE0E0D8BF0C14E13C80 /* Pods-FWLaunchAd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49460C61215B1E1E00D74896 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				49460C69215B1E1E00D74896 /* image0.jpg */,
+				49460C67215B1E1E00D74896 /* image1.jpg */,
+				49460C6B215B1E1E00D74896 /* image11.gif */,
+				49460C68215B1E1E00D74896 /* image12.gif */,
+				49460C6A215B1E1E00D74896 /* image2.jpg */,
+				49460C6C215B1E1E00D74896 /* image3.jpg */,
+				49460C66215B1E1E00D74896 /* image4.jpg */,
+				49460C62215B1E1E00D74896 /* LaunchVideoAd.json */,
+				49460C65215B1E1E00D74896 /* LaunchImageAd.json */,
+				49460C63215B1E1E00D74896 /* video0.mp4 */,
+				49460C64215B1E1E00D74896 /* video1.mp4 */,
+				49460C96215B73A600D74896 /* video2.mp4 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		49460C7F215B2BC800D74896 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				49460C8C215B2BC800D74896 /* ViewController.h */,
+				49460C87215B2BC800D74896 /* ViewController.m */,
+				49460C8D215B2BC800D74896 /* WebViewController.h */,
+				49460C88215B2BC800D74896 /* WebViewController.m */,
+				49460C80215B2BC800D74896 /* Tools */,
+				49460C89215B2BC800D74896 /* Model */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		49460C80215B2BC800D74896 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				49460C81215B2BC800D74896 /* Network */,
+				49460C84215B2BC800D74896 /* UIViewController+ */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		49460C81215B2BC800D74896 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49460C83215B2BC800D74896 /* Network.h */,
+				49460C82215B2BC800D74896 /* Network.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		49460C84215B2BC800D74896 /* UIViewController+ */ = {
+			isa = PBXGroup;
+			children = (
+				49460C85215B2BC800D74896 /* UIViewController+Nav.h */,
+				49460C86215B2BC800D74896 /* UIViewController+Nav.m */,
+			);
+			path = "UIViewController+";
+			sourceTree = "<group>";
+		};
+		49460C89215B2BC800D74896 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49460C8A215B2BC800D74896 /* LaunchAdModel.h */,
+				49460C8B215B2BC800D74896 /* LaunchAdModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4971A1C6214BAD18002B82BC = {
+			isa = PBXGroup;
+			children = (
+				4971A1D1214BAD18002B82BC /* FWLaunchAd */,
+				4971A1EA214BAD19002B82BC /* FWLaunchAdTests */,
+				4971A1F5214BAD19002B82BC /* FWLaunchAdUITests */,
+				4971A1D0214BAD18002B82BC /* Products */,
+				11367434D90D0264546BDEDF /* Pods */,
+				6A92091FC58763C0B8D1F656 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4971A1D0214BAD18002B82BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4971A1CF214BAD18002B82BC /* FWLaunchAd.app */,
+				4971A1E7214BAD19002B82BC /* FWLaunchAdTests.xctest */,
+				4971A1F2214BAD19002B82BC /* FWLaunchAdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4971A1D1214BAD18002B82BC /* FWLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				4971A204214BAD47002B82BC /* FWLaunchAd */,
+				49460C7F215B2BC800D74896 /* Class */,
+				49460C61215B1E1E00D74896 /* Source */,
+				4971A1D2214BAD18002B82BC /* AppDelegate.h */,
+				4971A1D3214BAD18002B82BC /* AppDelegate.m */,
+				49460C78215B272B00D74896 /* FWLaunchAdManager.h */,
+				49460C79215B272B00D74896 /* FWLaunchAdManager.m */,
+				4971A1D8214BAD18002B82BC /* Main.storyboard */,
+				4971A1DB214BAD19002B82BC /* Assets.xcassets */,
+				4971A1DD214BAD19002B82BC /* LaunchScreen.storyboard */,
+				4971A1E0214BAD19002B82BC /* Info.plist */,
+				4971A1E1214BAD19002B82BC /* main.m */,
+			);
+			path = FWLaunchAd;
+			sourceTree = "<group>";
+		};
+		4971A1EA214BAD19002B82BC /* FWLaunchAdTests */ = {
+			isa = PBXGroup;
+			children = (
+				4971A1EB214BAD19002B82BC /* FWLaunchAdTests.m */,
+				4971A1ED214BAD19002B82BC /* Info.plist */,
+			);
+			path = FWLaunchAdTests;
+			sourceTree = "<group>";
+		};
+		4971A1F5214BAD19002B82BC /* FWLaunchAdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4971A1F6214BAD19002B82BC /* FWLaunchAdUITests.m */,
+				4971A1F8214BAD19002B82BC /* Info.plist */,
+			);
+			path = FWLaunchAdUITests;
+			sourceTree = "<group>";
+		};
+		4971A204214BAD47002B82BC /* FWLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				4971A205214BAD52002B82BC /* FWLaunchAd.h */,
+				4971A206214BAD52002B82BC /* FWLaunchAd.m */,
+				498BA68B214F3BBF00790500 /* FWLaunchAdConfiguration.h */,
+				498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */,
+				498BA68E214F3DD100790500 /* FWLaunchAdCloseBtn.h */,
+				498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */,
+				498BA694214F50E600790500 /* FWLaunchAdMacro.h */,
+				498BA695214F50E600790500 /* FWLaunchAdMacro.m */,
+				498BA697214F7C3600790500 /* FWLaunchAdImageManager.h */,
+				498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */,
+				498BA69D214F80F100790500 /* FWLaunchAdImageView.h */,
+				498BA69E214F80F100790500 /* FWLaunchAdImageView.m */,
+				498BA6A0214F812000790500 /* FWLaunchAdVideoView.h */,
+				498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */,
+				498BA6A3214F953700790500 /* FWLaunchImageView.h */,
+				498BA6A4214F953700790500 /* FWLaunchImageView.m */,
+				498BA6A6214FA1E900790500 /* FWLaunchAdController.h */,
+				498BA6A7214FA1E900790500 /* FWLaunchAdController.m */,
+				499FDFE72150ABC0005BCE3E /* FWLaunchAdCache.h */,
+				499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */,
+				49460C93215B32FD00D74896 /* FWLaunchAdDownloader.h */,
+				49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */,
+			);
+			path = FWLaunchAd;
+			sourceTree = "<group>";
+		};
+		6A92091FC58763C0B8D1F656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC04B77E77AC729BDC55C79 /* libPods-FWLaunchAd.a */,
+				3288B4E6C3E159C81E51679A /* libPods-FWLaunchAdTests.a */,
+				0466D11C3601206F1349BD7F /* libPods-FWLaunchAdUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4971A1CE214BAD18002B82BC /* FWLaunchAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4971A1FB214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAd" */;
+			buildPhases = (
+				6D2E495B277BC0CD3FA4BC2F /* [CP] Check Pods Manifest.lock */,
+				4971A1CB214BAD18002B82BC /* Sources */,
+				4971A1CC214BAD18002B82BC /* Frameworks */,
+				4971A1CD214BAD18002B82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FWLaunchAd;
+			productName = FWLaunchAd;
+			productReference = 4971A1CF214BAD18002B82BC /* FWLaunchAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4971A1E6214BAD19002B82BC /* FWLaunchAdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4971A1FE214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAdTests" */;
+			buildPhases = (
+				4971A1E3214BAD19002B82BC /* Sources */,
+				4971A1E4214BAD19002B82BC /* Frameworks */,
+				4971A1E5214BAD19002B82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4971A1E9214BAD19002B82BC /* PBXTargetDependency */,
+			);
+			name = FWLaunchAdTests;
+			productName = FWLaunchAdTests;
+			productReference = 4971A1E7214BAD19002B82BC /* FWLaunchAdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4971A1F1214BAD19002B82BC /* FWLaunchAdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4971A201214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAdUITests" */;
+			buildPhases = (
+				4971A1EE214BAD19002B82BC /* Sources */,
+				4971A1EF214BAD19002B82BC /* Frameworks */,
+				4971A1F0214BAD19002B82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4971A1F4214BAD19002B82BC /* PBXTargetDependency */,
+			);
+			name = FWLaunchAdUITests;
+			productName = FWLaunchAdUITests;
+			productReference = 4971A1F2214BAD19002B82BC /* FWLaunchAdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4971A1C7214BAD18002B82BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = xfg;
+				TargetAttributes = {
+					4971A1CE214BAD18002B82BC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4971A1E6214BAD19002B82BC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4971A1CE214BAD18002B82BC;
+					};
+					4971A1F1214BAD19002B82BC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4971A1CE214BAD18002B82BC;
+					};
+				};
+			};
+			buildConfigurationList = 4971A1CA214BAD18002B82BC /* Build configuration list for PBXProject "FWLaunchAd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4971A1C6214BAD18002B82BC;
+			productRefGroup = 4971A1D0214BAD18002B82BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4971A1CE214BAD18002B82BC /* FWLaunchAd */,
+				4971A1E6214BAD19002B82BC /* FWLaunchAdTests */,
+				4971A1F1214BAD19002B82BC /* FWLaunchAdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4971A1CD214BAD18002B82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49460C71215B1E1E00D74896 /* image4.jpg in Resources */,
+				4971A1DF214BAD19002B82BC /* LaunchScreen.storyboard in Resources */,
+				49460C6D215B1E1E00D74896 /* LaunchVideoAd.json in Resources */,
+				49460C73215B1E1E00D74896 /* image12.gif in Resources */,
+				4971A1DC214BAD19002B82BC /* Assets.xcassets in Resources */,
+				49460C77215B1E1F00D74896 /* image3.jpg in Resources */,
+				49460C6F215B1E1E00D74896 /* video1.mp4 in Resources */,
+				49460C6E215B1E1E00D74896 /* video0.mp4 in Resources */,
+				49460C97215B73A600D74896 /* video2.mp4 in Resources */,
+				49460C70215B1E1E00D74896 /* LaunchImageAd.json in Resources */,
+				4971A1DA214BAD18002B82BC /* Main.storyboard in Resources */,
+				49460C72215B1E1E00D74896 /* image1.jpg in Resources */,
+				49460C76215B1E1E00D74896 /* image11.gif in Resources */,
+				49460C75215B1E1E00D74896 /* image2.jpg in Resources */,
+				49460C74215B1E1E00D74896 /* image0.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1E5214BAD19002B82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1F0214BAD19002B82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D2E495B277BC0CD3FA4BC2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FWLaunchAd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4971A1CB214BAD18002B82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4971A207214BAD52002B82BC /* FWLaunchAd.m in Sources */,
+				498BA6A2214F812000790500 /* FWLaunchAdVideoView.m in Sources */,
+				49460C7A215B272B00D74896 /* FWLaunchAdManager.m in Sources */,
+				498BA696214F50E600790500 /* FWLaunchAdMacro.m in Sources */,
+				498BA690214F3DD100790500 /* FWLaunchAdCloseBtn.m in Sources */,
+				4971A1E2214BAD19002B82BC /* main.m in Sources */,
+				498BA6A8214FA1E900790500 /* FWLaunchAdController.m in Sources */,
+				49460C92215B2BC800D74896 /* LaunchAdModel.m in Sources */,
+				498BA69F214F80F100790500 /* FWLaunchAdImageView.m in Sources */,
+				49460C91215B2BC800D74896 /* WebViewController.m in Sources */,
+				49460C95215B32FE00D74896 /* FWLaunchAdDownloader.m in Sources */,
+				4971A1D4214BAD18002B82BC /* AppDelegate.m in Sources */,
+				49460C8F215B2BC800D74896 /* UIViewController+Nav.m in Sources */,
+				49460C90215B2BC800D74896 /* ViewController.m in Sources */,
+				499FDFE92150ABC0005BCE3E /* FWLaunchAdCache.m in Sources */,
+				498BA699214F7C3600790500 /* FWLaunchAdImageManager.m in Sources */,
+				498BA6A5214F953700790500 /* FWLaunchImageView.m in Sources */,
+				49460C8E215B2BC800D74896 /* Network.m in Sources */,
+				498BA68D214F3BBF00790500 /* FWLaunchAdConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1E3214BAD19002B82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4971A1EC214BAD19002B82BC /* FWLaunchAdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4971A1EE214BAD19002B82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4971A1F7214BAD19002B82BC /* FWLaunchAdUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4971A1E9214BAD19002B82BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4971A1CE214BAD18002B82BC /* FWLaunchAd */;
+			targetProxy = 4971A1E8214BAD19002B82BC /* PBXContainerItemProxy */;
+		};
+		4971A1F4214BAD19002B82BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4971A1CE214BAD18002B82BC /* FWLaunchAd */;
+			targetProxy = 4971A1F3214BAD19002B82BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4971A1D8214BAD18002B82BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4971A1D9214BAD18002B82BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4971A1DD214BAD19002B82BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4971A1DE214BAD19002B82BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4971A1F9214BAD19002B82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4971A1FA214BAD19002B82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4971A1FC214BAD19002B82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7CBCB2D42B3C9C8F74400E8 /* Pods-FWLaunchAd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3WDRKDVER;
+				INFOPLIST_FILE = FWLaunchAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4971A1FD214BAD19002B82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903FCDE0E0D8BF0C14E13C80 /* Pods-FWLaunchAd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3WDRKDVER;
+				INFOPLIST_FILE = FWLaunchAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4971A1FF214BAD19002B82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FWLaunchAdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FWLaunchAd.app/FWLaunchAd";
+			};
+			name = Debug;
+		};
+		4971A200214BAD19002B82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FWLaunchAdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FWLaunchAd.app/FWLaunchAd";
+			};
+			name = Release;
+		};
+		4971A202214BAD19002B82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FWLaunchAdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FWLaunchAd;
+			};
+			name = Debug;
+		};
+		4971A203214BAD19002B82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FWLaunchAdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfg.FWLaunchAdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FWLaunchAd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4971A1CA214BAD18002B82BC /* Build configuration list for PBXProject "FWLaunchAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4971A1F9214BAD19002B82BC /* Debug */,
+				4971A1FA214BAD19002B82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4971A1FB214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4971A1FC214BAD19002B82BC /* Debug */,
+				4971A1FD214BAD19002B82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4971A1FE214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4971A1FF214BAD19002B82BC /* Debug */,
+				4971A200214BAD19002B82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4971A201214BAD19002B82BC /* Build configuration list for PBXNativeTarget "FWLaunchAdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4971A202214BAD19002B82BC /* Debug */,
+				4971A203214BAD19002B82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4971A1C7214BAD18002B82BC /* Project object */;
+}
