@@ -155,13 +155,13 @@
     // 广告点击打开页面参数(openModel可为NSString,模型,字典等任意类型)
     imageAdconfiguration.openModel = @"https://github.com/choiceyou";
     // 广告显示完成动画
-    imageAdconfiguration.showFinishAnimate = AdShowCompletedAnimateFlipFromLeft;
+    imageAdconfiguration.showFinishAnimate = AdShowCompletedAnimateFadein;
     // 广告显示完成动画时间
     imageAdconfiguration.showFinishAnimateTime = 0.8;
     // 跳过按钮类型
     imageAdconfiguration.skipButtonType = AdSkipTypeRoundProgressText;
     // 后台返回时,是否显示广告
-    imageAdconfiguration.showEnterForeground = NO;
+    imageAdconfiguration.showEnterForeground = YES;
     // 设置要添加的子视图(可选)
     // imageAdconfiguration.subViews = [self launchAdSubViews];
     // 显示开屏广告
