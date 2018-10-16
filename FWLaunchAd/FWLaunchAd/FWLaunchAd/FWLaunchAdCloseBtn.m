@@ -193,8 +193,7 @@ static NSString *const kDurationUnit = @"S";
             if(roundDuration <= 0)
             {
                 self.roundLayer.strokeStart = 1;
-                dispatch_source_cancel(self.roundTimer);
-                self.roundTimer = nil;
+                DISPATCH_SOURCE_CANCEL_SAFE(self.roundTimer);
             }
             self.roundLayer.strokeStart += 1/(duration/period);
             roundDuration -= period;
