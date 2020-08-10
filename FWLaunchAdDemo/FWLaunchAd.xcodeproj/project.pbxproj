@@ -25,7 +25,6 @@
 		49460C90215B2BC800D74896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C87215B2BC800D74896 /* ViewController.m */; };
 		49460C91215B2BC800D74896 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C88215B2BC800D74896 /* WebViewController.m */; };
 		49460C92215B2BC800D74896 /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C8B215B2BC800D74896 /* LaunchAdModel.m */; };
-		49460C95215B32FE00D74896 /* FWLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */; };
 		49460C97215B73A600D74896 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49460C96215B73A600D74896 /* video2.mp4 */; };
 		4971A1D4214BAD18002B82BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1D3214BAD18002B82BC /* AppDelegate.m */; };
 		4971A1DA214BAD18002B82BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971A1D8214BAD18002B82BC /* Main.storyboard */; };
@@ -34,16 +33,17 @@
 		4971A1E2214BAD19002B82BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1E1214BAD19002B82BC /* main.m */; };
 		4971A1EC214BAD19002B82BC /* FWLaunchAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1EB214BAD19002B82BC /* FWLaunchAdTests.m */; };
 		4971A1F7214BAD19002B82BC /* FWLaunchAdUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A1F6214BAD19002B82BC /* FWLaunchAdUITests.m */; };
-		4971A207214BAD52002B82BC /* FWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4971A206214BAD52002B82BC /* FWLaunchAd.m */; };
-		498BA68D214F3BBF00790500 /* FWLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */; };
-		498BA690214F3DD100790500 /* FWLaunchAdCloseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */; };
-		498BA696214F50E600790500 /* FWLaunchAdMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA695214F50E600790500 /* FWLaunchAdMacro.m */; };
-		498BA699214F7C3600790500 /* FWLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */; };
-		498BA69F214F80F100790500 /* FWLaunchAdImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA69E214F80F100790500 /* FWLaunchAdImageView.m */; };
-		498BA6A2214F812000790500 /* FWLaunchAdVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */; };
-		498BA6A5214F953700790500 /* FWLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A4214F953700790500 /* FWLaunchImageView.m */; };
-		498BA6A8214FA1E900790500 /* FWLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498BA6A7214FA1E900790500 /* FWLaunchAdController.m */; };
-		499FDFE92150ABC0005BCE3E /* FWLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */; };
+		AFB0631C24E136C800776B4F /* FWLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0630624E136C800776B4F /* FWLaunchAdConfiguration.m */; };
+		AFB0631D24E136C800776B4F /* FWLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0630724E136C800776B4F /* FWLaunchAdImageManager.m */; };
+		AFB0631E24E136C800776B4F /* FWLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0630924E136C800776B4F /* FWLaunchImageView.m */; };
+		AFB0631F24E136C800776B4F /* FWLaunchAdVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0630C24E136C800776B4F /* FWLaunchAdVideoView.m */; };
+		AFB0632024E136C800776B4F /* FWLaunchAdCloseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0630F24E136C800776B4F /* FWLaunchAdCloseBtn.m */; };
+		AFB0632124E136C800776B4F /* FWLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631324E136C800776B4F /* FWLaunchAdController.m */; };
+		AFB0632224E136C800776B4F /* FWLaunchAdMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631424E136C800776B4F /* FWLaunchAdMacro.m */; };
+		AFB0632324E136C800776B4F /* FWLaunchAdImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631624E136C800776B4F /* FWLaunchAdImageView.m */; };
+		AFB0632424E136C800776B4F /* FWLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631724E136C800776B4F /* FWLaunchAdDownloader.m */; };
+		AFB0632524E136C800776B4F /* FWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631924E136C800776B4F /* FWLaunchAd.m */; };
+		AFB0632624E136C800776B4F /* FWLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0631A24E136C800776B4F /* FWLaunchAdCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +89,6 @@
 		49460C8B215B2BC800D74896 /* LaunchAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
 		49460C8C215B2BC800D74896 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		49460C8D215B2BC800D74896 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		49460C93215B32FD00D74896 /* FWLaunchAdDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdDownloader.h; sourceTree = "<group>"; };
-		49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdDownloader.m; sourceTree = "<group>"; };
 		49460C96215B73A600D74896 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		4971A1CF214BAD18002B82BC /* FWLaunchAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWLaunchAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4971A1D2214BAD18002B82BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,27 +104,29 @@
 		4971A1F2214BAD19002B82BC /* FWLaunchAdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWLaunchAdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4971A1F6214BAD19002B82BC /* FWLaunchAdUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdUITests.m; sourceTree = "<group>"; };
 		4971A1F8214BAD19002B82BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4971A205214BAD52002B82BC /* FWLaunchAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAd.h; sourceTree = "<group>"; };
-		4971A206214BAD52002B82BC /* FWLaunchAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAd.m; sourceTree = "<group>"; };
-		498BA68B214F3BBF00790500 /* FWLaunchAdConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdConfiguration.h; sourceTree = "<group>"; };
-		498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdConfiguration.m; sourceTree = "<group>"; };
-		498BA68E214F3DD100790500 /* FWLaunchAdCloseBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCloseBtn.h; sourceTree = "<group>"; };
-		498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCloseBtn.m; sourceTree = "<group>"; };
-		498BA694214F50E600790500 /* FWLaunchAdMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdMacro.h; sourceTree = "<group>"; };
-		498BA695214F50E600790500 /* FWLaunchAdMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdMacro.m; sourceTree = "<group>"; };
-		498BA697214F7C3600790500 /* FWLaunchAdImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageManager.h; sourceTree = "<group>"; };
-		498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageManager.m; sourceTree = "<group>"; };
-		498BA69D214F80F100790500 /* FWLaunchAdImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageView.h; sourceTree = "<group>"; };
-		498BA69E214F80F100790500 /* FWLaunchAdImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageView.m; sourceTree = "<group>"; };
-		498BA6A0214F812000790500 /* FWLaunchAdVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdVideoView.h; sourceTree = "<group>"; };
-		498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdVideoView.m; sourceTree = "<group>"; };
-		498BA6A3214F953700790500 /* FWLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchImageView.h; sourceTree = "<group>"; };
-		498BA6A4214F953700790500 /* FWLaunchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchImageView.m; sourceTree = "<group>"; };
-		498BA6A6214FA1E900790500 /* FWLaunchAdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdController.h; sourceTree = "<group>"; };
-		498BA6A7214FA1E900790500 /* FWLaunchAdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdController.m; sourceTree = "<group>"; };
-		499FDFE72150ABC0005BCE3E /* FWLaunchAdCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCache.h; sourceTree = "<group>"; };
-		499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCache.m; sourceTree = "<group>"; };
 		903FCDE0E0D8BF0C14E13C80 /* Pods-FWLaunchAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWLaunchAd.release.xcconfig"; path = "Pods/Target Support Files/Pods-FWLaunchAd/Pods-FWLaunchAd.release.xcconfig"; sourceTree = "<group>"; };
+		AFB0630624E136C800776B4F /* FWLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		AFB0630724E136C800776B4F /* FWLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageManager.m; sourceTree = "<group>"; };
+		AFB0630824E136C800776B4F /* FWLaunchAdImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageView.h; sourceTree = "<group>"; };
+		AFB0630924E136C800776B4F /* FWLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchImageView.m; sourceTree = "<group>"; };
+		AFB0630A24E136C800776B4F /* FWLaunchAdMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdMacro.h; sourceTree = "<group>"; };
+		AFB0630B24E136C800776B4F /* FWLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdController.h; sourceTree = "<group>"; };
+		AFB0630C24E136C800776B4F /* FWLaunchAdVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdVideoView.m; sourceTree = "<group>"; };
+		AFB0630D24E136C800776B4F /* FWLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCache.h; sourceTree = "<group>"; };
+		AFB0630E24E136C800776B4F /* FWLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAd.h; sourceTree = "<group>"; };
+		AFB0630F24E136C800776B4F /* FWLaunchAdCloseBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCloseBtn.m; sourceTree = "<group>"; };
+		AFB0631024E136C800776B4F /* FWLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdDownloader.h; sourceTree = "<group>"; };
+		AFB0631124E136C800776B4F /* FWLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		AFB0631224E136C800776B4F /* FWLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdImageManager.h; sourceTree = "<group>"; };
+		AFB0631324E136C800776B4F /* FWLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdController.m; sourceTree = "<group>"; };
+		AFB0631424E136C800776B4F /* FWLaunchAdMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdMacro.m; sourceTree = "<group>"; };
+		AFB0631524E136C800776B4F /* FWLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchImageView.h; sourceTree = "<group>"; };
+		AFB0631624E136C800776B4F /* FWLaunchAdImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdImageView.m; sourceTree = "<group>"; };
+		AFB0631724E136C800776B4F /* FWLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdDownloader.m; sourceTree = "<group>"; };
+		AFB0631824E136C800776B4F /* FWLaunchAdCloseBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdCloseBtn.h; sourceTree = "<group>"; };
+		AFB0631924E136C800776B4F /* FWLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAd.m; sourceTree = "<group>"; };
+		AFB0631A24E136C800776B4F /* FWLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLaunchAdCache.m; sourceTree = "<group>"; };
+		AFB0631B24E136C800776B4F /* FWLaunchAdVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLaunchAdVideoView.h; sourceTree = "<group>"; };
 		C7CBCB2D42B3C9C8F74400E8 /* Pods-FWLaunchAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWLaunchAd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FWLaunchAd/Pods-FWLaunchAd.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC04B77E77AC729BDC55C79 /* libPods-FWLaunchAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FWLaunchAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -259,7 +259,7 @@
 		4971A1D1214BAD18002B82BC /* FWLaunchAd */ = {
 			isa = PBXGroup;
 			children = (
-				4971A204214BAD47002B82BC /* FWLaunchAd */,
+				AFB0630524E136C800776B4F /* FWLaunchAd */,
 				49460C7F215B2BC800D74896 /* Class */,
 				49460C61215B1E1E00D74896 /* Source */,
 				4971A1D2214BAD18002B82BC /* AppDelegate.h */,
@@ -293,35 +293,6 @@
 			path = FWLaunchAdUITests;
 			sourceTree = "<group>";
 		};
-		4971A204214BAD47002B82BC /* FWLaunchAd */ = {
-			isa = PBXGroup;
-			children = (
-				4971A205214BAD52002B82BC /* FWLaunchAd.h */,
-				4971A206214BAD52002B82BC /* FWLaunchAd.m */,
-				498BA68B214F3BBF00790500 /* FWLaunchAdConfiguration.h */,
-				498BA68C214F3BBF00790500 /* FWLaunchAdConfiguration.m */,
-				498BA68E214F3DD100790500 /* FWLaunchAdCloseBtn.h */,
-				498BA68F214F3DD100790500 /* FWLaunchAdCloseBtn.m */,
-				498BA694214F50E600790500 /* FWLaunchAdMacro.h */,
-				498BA695214F50E600790500 /* FWLaunchAdMacro.m */,
-				498BA697214F7C3600790500 /* FWLaunchAdImageManager.h */,
-				498BA698214F7C3600790500 /* FWLaunchAdImageManager.m */,
-				498BA69D214F80F100790500 /* FWLaunchAdImageView.h */,
-				498BA69E214F80F100790500 /* FWLaunchAdImageView.m */,
-				498BA6A0214F812000790500 /* FWLaunchAdVideoView.h */,
-				498BA6A1214F812000790500 /* FWLaunchAdVideoView.m */,
-				498BA6A3214F953700790500 /* FWLaunchImageView.h */,
-				498BA6A4214F953700790500 /* FWLaunchImageView.m */,
-				498BA6A6214FA1E900790500 /* FWLaunchAdController.h */,
-				498BA6A7214FA1E900790500 /* FWLaunchAdController.m */,
-				499FDFE72150ABC0005BCE3E /* FWLaunchAdCache.h */,
-				499FDFE82150ABC0005BCE3E /* FWLaunchAdCache.m */,
-				49460C93215B32FD00D74896 /* FWLaunchAdDownloader.h */,
-				49460C94215B32FE00D74896 /* FWLaunchAdDownloader.m */,
-			);
-			path = FWLaunchAd;
-			sourceTree = "<group>";
-		};
 		6A92091FC58763C0B8D1F656 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +301,36 @@
 				0466D11C3601206F1349BD7F /* libPods-FWLaunchAdUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB0630524E136C800776B4F /* FWLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				AFB0630E24E136C800776B4F /* FWLaunchAd.h */,
+				AFB0631924E136C800776B4F /* FWLaunchAd.m */,
+				AFB0630D24E136C800776B4F /* FWLaunchAdCache.h */,
+				AFB0631A24E136C800776B4F /* FWLaunchAdCache.m */,
+				AFB0631824E136C800776B4F /* FWLaunchAdCloseBtn.h */,
+				AFB0630F24E136C800776B4F /* FWLaunchAdCloseBtn.m */,
+				AFB0631124E136C800776B4F /* FWLaunchAdConfiguration.h */,
+				AFB0630624E136C800776B4F /* FWLaunchAdConfiguration.m */,
+				AFB0630B24E136C800776B4F /* FWLaunchAdController.h */,
+				AFB0631324E136C800776B4F /* FWLaunchAdController.m */,
+				AFB0631024E136C800776B4F /* FWLaunchAdDownloader.h */,
+				AFB0631724E136C800776B4F /* FWLaunchAdDownloader.m */,
+				AFB0631224E136C800776B4F /* FWLaunchAdImageManager.h */,
+				AFB0630724E136C800776B4F /* FWLaunchAdImageManager.m */,
+				AFB0630824E136C800776B4F /* FWLaunchAdImageView.h */,
+				AFB0631624E136C800776B4F /* FWLaunchAdImageView.m */,
+				AFB0630A24E136C800776B4F /* FWLaunchAdMacro.h */,
+				AFB0631424E136C800776B4F /* FWLaunchAdMacro.m */,
+				AFB0631B24E136C800776B4F /* FWLaunchAdVideoView.h */,
+				AFB0630C24E136C800776B4F /* FWLaunchAdVideoView.m */,
+				AFB0631524E136C800776B4F /* FWLaunchImageView.h */,
+				AFB0630924E136C800776B4F /* FWLaunchImageView.m */,
+			);
+			name = FWLaunchAd;
+			path = ../../FWLaunchAd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,25 +497,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4971A207214BAD52002B82BC /* FWLaunchAd.m in Sources */,
-				498BA6A2214F812000790500 /* FWLaunchAdVideoView.m in Sources */,
+				AFB0632024E136C800776B4F /* FWLaunchAdCloseBtn.m in Sources */,
 				49460C7A215B272B00D74896 /* FWLaunchAdManager.m in Sources */,
-				498BA696214F50E600790500 /* FWLaunchAdMacro.m in Sources */,
-				498BA690214F3DD100790500 /* FWLaunchAdCloseBtn.m in Sources */,
+				AFB0631C24E136C800776B4F /* FWLaunchAdConfiguration.m in Sources */,
 				4971A1E2214BAD19002B82BC /* main.m in Sources */,
-				498BA6A8214FA1E900790500 /* FWLaunchAdController.m in Sources */,
+				AFB0631F24E136C800776B4F /* FWLaunchAdVideoView.m in Sources */,
 				49460C92215B2BC800D74896 /* LaunchAdModel.m in Sources */,
-				498BA69F214F80F100790500 /* FWLaunchAdImageView.m in Sources */,
+				AFB0632624E136C800776B4F /* FWLaunchAdCache.m in Sources */,
+				AFB0632524E136C800776B4F /* FWLaunchAd.m in Sources */,
+				AFB0631D24E136C800776B4F /* FWLaunchAdImageManager.m in Sources */,
 				49460C91215B2BC800D74896 /* WebViewController.m in Sources */,
-				49460C95215B32FE00D74896 /* FWLaunchAdDownloader.m in Sources */,
 				4971A1D4214BAD18002B82BC /* AppDelegate.m in Sources */,
 				49460C8F215B2BC800D74896 /* UIViewController+Nav.m in Sources */,
+				AFB0632124E136C800776B4F /* FWLaunchAdController.m in Sources */,
+				AFB0632424E136C800776B4F /* FWLaunchAdDownloader.m in Sources */,
+				AFB0632324E136C800776B4F /* FWLaunchAdImageView.m in Sources */,
+				AFB0632224E136C800776B4F /* FWLaunchAdMacro.m in Sources */,
 				49460C90215B2BC800D74896 /* ViewController.m in Sources */,
-				499FDFE92150ABC0005BCE3E /* FWLaunchAdCache.m in Sources */,
-				498BA699214F7C3600790500 /* FWLaunchAdImageManager.m in Sources */,
-				498BA6A5214F953700790500 /* FWLaunchImageView.m in Sources */,
+				AFB0631E24E136C800776B4F /* FWLaunchImageView.m in Sources */,
 				49460C8E215B2BC800D74896 /* Network.m in Sources */,
-				498BA68D214F3BBF00790500 /* FWLaunchAdConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
