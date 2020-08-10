@@ -672,7 +672,7 @@ static  SourceType _sourceType = SourceTypeLaunchImage;
 {
     self.clickPoint = point;
     FWLaunchAdConfiguration *configuration = [self commonConfiguration];
-    if ([self.delegate respondsToSelector:@selector(fwLaunchAd:clickAndOpenModel:clickPoint:)])
+    if (!configuration.forbidClickAdView && [self.delegate respondsToSelector:@selector(fwLaunchAd:clickAndOpenModel:clickPoint:)])
     {
         [self.delegate fwLaunchAd:self clickAndOpenModel:configuration.openModel clickPoint:point];
         [self removeAndAnimateDefault];

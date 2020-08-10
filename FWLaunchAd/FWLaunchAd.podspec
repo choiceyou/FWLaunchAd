@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FWLaunchAd"
-  s.version      = "2.0.3"
+  s.version      = "2.0.4"
   s.summary      = "启动广告图，支持本地或者网络图片、gif图片、视频."
 
   # This description is used to generate tags and improve search results.

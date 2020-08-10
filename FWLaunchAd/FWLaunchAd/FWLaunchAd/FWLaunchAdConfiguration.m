@@ -39,6 +39,8 @@
     configuration.skipButtonType = AdSkipTypeTimeText;
     // 后台返回时,是否显示广告
     configuration.showEnterForeground = NO;
+    // 禁止点击广告视图
+    configuration.forbidClickAdView = NO;
     
     return configuration;
 }

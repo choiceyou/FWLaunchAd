@@ -93,6 +93,11 @@ typedef NS_ENUM(NSUInteger, FWLaunchDynamicAdPlayType)
 @property (nonatomic,assign) BOOL showEnterForeground;
 
 /**
+ 禁止点击广告视图(defailt NO)
+ */
+@property (nonatomic,assign) BOOL forbidClickAdView;
+
+/**
  点击打开页面参数
  */
 @property (nonatomic, strong) id openModel;
